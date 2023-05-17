@@ -5,7 +5,7 @@ import {
   OnInit,
   TemplateRef,
 } from '@angular/core';
-import { LOGO, ROUTES } from 'src/app/utils/constant';
+import { FRAMER, LOGO, ROUTES } from 'src/app/utils/constant';
 
 @Component({
   selector: 'app-main',
@@ -16,6 +16,7 @@ export class MainComponent implements OnInit {
   @Input() template!: TemplateRef<any>;
   navbarFixed: boolean = false;
   LOGO: string = LOGO;
+  FRAMER: string = FRAMER;
   NAV_CLASS = 'w-full text-gray-300 cursor-pointer items-center mt-2';
   ACTIVE_ANCHOR_CLASS =
     'flex items-center focus:outline-none focus:ring-2 focus:ring-white menu is-active';
