@@ -1,4 +1,10 @@
-import { Component, HostListener, Input, OnInit, TemplateRef } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  Input,
+  OnInit,
+  TemplateRef,
+} from '@angular/core';
 import { LOGO, ROUTES } from 'src/app/utils/constant';
 
 @Component({
@@ -8,7 +14,7 @@ import { LOGO, ROUTES } from 'src/app/utils/constant';
 })
 export class MainComponent implements OnInit {
   @Input() template!: TemplateRef<any>;
-  navbarFixed: boolean = false
+  navbarFixed: boolean = false;
   LOGO: string = LOGO;
   NAV_CLASS = 'w-full text-gray-300 cursor-pointer items-center mt-2';
   ACTIVE_ANCHOR_CLASS =
@@ -17,21 +23,13 @@ export class MainComponent implements OnInit {
     'flex items-center focus:outline-none focus:ring-2 focus:ring-white menu';
 
   routes = ROUTES;
-  sideBar: any = null;
-  openSidebar: any = null;
-  closeSidebar: any = null;
-  menu: any = null;
-  activeSubMenu: any = null;
-  flag: boolean = false;
+  guests: number = 4;
 
-  @HostListener('window:scroll', ['$event']) onScroll(){
-    if(window.scrollY > 64){
-      this.navbarFixed = true
-      // document.getElementsByClassName('header')[0].classList.add('shadow');
-    }else{
-      this.navbarFixed = false
-      // document.getElementsByClassName('header')[0].classList.add('remove-shadow');
-
+  @HostListener('window:scroll', ['$event']) onScroll() {
+    if (window.scrollY > 64) {
+      this.navbarFixed = true;
+    } else {
+      this.navbarFixed = false;
     }
   }
 
@@ -39,32 +37,13 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     window.scrollTo(0, 0);
-    this.sideBar = document.getElementById("mobile-nav");
-    this.openSidebar = document.getElementById("openSideBar");
-    this.closeSidebar = document.getElementById("closeSideBar");
-    this.menu = document.querySelector(".mobile-menu");
   }
 
-  sidebarHandler = (flag: boolean) => {
-    this.flag = flag;
-    if (flag) {
-      this.sideBar.style.transform = "translateX(0px)";
-      this.openSidebar.classList.add("hidden");
-      this.closeSidebar.classList.remove("hidden");
-      this.menu.classList.add("hidden");
-    } else {
-      this.sideBar.style.transform = "translateX(-260px)";
-      this.closeSidebar.classList.add("hidden");
-      this.openSidebar.classList.remove("hidden");
-    }
+  add() {
+    this.guests = this.guests + 1;
+  }
 
-    if (this.sideBar !== null && !this.flag) {
-      this.sideBar.style.transform = "translateX(-260px)";
-    }
-  };
-
-  handleMenu = () => {
-    this.menu.classList.toggle("hidden");
-    this.sidebarHandler(false);
-  };
+  remove() {
+    this.guests = this.guests === 0 ? 0 : this.guests - 1;
+  }
 }

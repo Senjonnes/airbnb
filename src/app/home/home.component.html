@@ -1,8 +1,8 @@
 <app-main [template]="content"></app-main>
 <ng-template #content>
-  <div class="w-full bg-primary-400 rounded-lg text-sm-regular text-white">
-    <div className="w-full pb-4">
-      <h1 class="text-body-lg font-bold underline">Hello world!</h1>
-    </div>
+  <div class="w-full grid grid-cols-4 gap-6 pb-10">
+    <ng-container *ngFor="let frame of frames">
+      <app-frame [frame]="frame"></app-frame>
+    </ng-container>
   </div>
 </ng-template>

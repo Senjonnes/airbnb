@@ -2,3 +2,19 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.trans {
+  transition: all 0.1s ease;
+}
+
+.trans-2 {
+  transition: all 0.2s ease;
+}
+
+.trans-3 {
+  transition: all 0.3s ease;
+}
+
+.trans-4 {
+  transition: all 0.4s ease;
+}

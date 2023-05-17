@@ -1,14 +1,26 @@
-<div class="overflow-hidden relative" (scroll)="onScroll()">
+<div class="relative h-[100vh]" (scroll)="onScroll()">
   <nav class="bg-white w-full z-10">
-    <div class="mx-auto px-6 border-b border-gray-300">
-      <div class="flex justify-between items-center">
+    <div class="mx-auto px-6 border-b border-gray-300 h-[65.5px]">
+      <div class="flex justify-between items-center h-full">
         <a href="#/" class="flex items-center py-4 px-2">
           <img [src]="LOGO" class="h-8 mr-2" />
         </a>
-        <div href="#/" class="flex items-center py-4 px-2 gap-x-10">
-          <div>Stays</div>
-          <div>Experiences</div>
-          <div>Online Experiences</div>
+        <div class="flex items-center gap-x-10 h-full">
+          <div
+            class="h-full flex items-center cursor-pointer text-[#111111] border-b-[4px] border-b-[#ff385c] font-medium trans"
+          >
+            Stays
+          </div>
+          <div
+            class="h-full flex items-center cursor-pointer text-[#717171] hover:text-[#111111] hover:border-b-[4px] hover:border-b-[#ff385c] hover:font-medium trans"
+          >
+            Experiences
+          </div>
+          <div
+            class="h-full flex items-center cursor-pointer text-[#717171] hover:text-[#111111] hover:border-b-[4px] hover:border-b-[#ff385c] hover:font-medium trans"
+          >
+            Online Experiences
+          </div>
         </div>
         <div class="flex items-center space-x-3 h-full">
           <img
@@ -16,28 +28,12 @@
             class="h-10 rounded-full"
           />
         </div>
-        <div class="md:hidden flex items-center">
-          <button
-            (click)="(handleMenu)"
-            class="outline-none mobile-menu-button"
-          >
-            <svg
-              class="w-6 h-6 text-gray-500 hover:text-green-500"
-              x-show="!showMenu"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
       </div>
     </div>
-    <div class="mx-auto px-6 border-b border-gray-300 w-full bg-white" [ngClass]="navbarFixed ? 'fixed top-0 z-10' : ''">
+    <div
+      class="mx-auto px-6 border-b border-gray-300 w-full bg-white"
+      [ngClass]="navbarFixed ? 'fixed top-0 z-10' : ''"
+    >
       <div class="flex justify-between items-center">
         <div class="flex items-center my-3 mx-2 bg-gray-100 rounded-lg">
           <div class="p-3 bg-black rounded-lg">
@@ -47,12 +43,40 @@
             <img src="assets/images/airbnb-map.png" class="h-5" />
           </div>
         </div>
-        <div href="#/" class="flex items-center py-4 px-2 gap-x-10">
-          <div>Stays</div>
-          <div>Experiences</div>
-          <div>Online Experiences</div>
+        <div class="flex items-center my-3 mx-2 gap-x-4">
+          <div
+            class="bg-gray-100 rounded-lg py-3 px-3 flex gap-x-20 items-center"
+          >
+            <div class="text-[#111111]">Anywhere</div>
+            <img src="assets/images/airbnb-down-chevron.png" class="h-4" />
+          </div>
+          <div
+            class="bg-gray-100 rounded-lg py-3 px-3 flex gap-x-4 items-center"
+          >
+            <img src="assets/images/airbnb-calendar.png" class="h-4" />
+            <div class="text-[#111111]">June 14 - 21</div>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-2 flex gap-x-4 items-center">
+            <div
+              class="h-8 w-8 bg-white text-[#d33b50] flex items-center justify-center rounded-lg cursor-pointer"
+              (click)="remove()"
+            >
+              <img src="assets/images/airbnb-dash.png" class="h-4" />
+            </div>
+            <div class="text-[#111111]">
+              {{ guests }} {{ guests > 1 ? "guests" : "guest" }}
+            </div>
+            <div
+              class="h-8 w-8 bg-white text-[#d33b50] flex items-center justify-center rounded-lg cursor-pointer"
+              (click)="add()"
+            >
+              <img src="assets/images/airbnb-plus.png" class="h-4" />
+            </div>
+          </div>
         </div>
-        <div class="flex items-center my-3 mx-2 bg-gray-100 rounded-lg">
+        <div
+          class="flex items-center my-3 mx-2 bg-gray-100 rounded-lg cursor-pointer hover:bg-[#ebebea] trans"
+        >
           <div class="p-3">
             <img src="assets/images/airbnb-filter.png" class="h-5" />
           </div>
@@ -65,11 +89,13 @@
     <div class="h-full">
       <div class="flex flex-no-wrap h-full bg-main">
         <div
-          style="min-height: '716px'"
-          class="side-nav overflow-hidden absolute sm:relative bg-white border-r border-gray-300 md:h-full flex-col justify-between flex"
+          class="side-nav absolute sm:relative bg-white border-r border-gray-300 md:h-full flex-col justify-between flex"
         >
           <div class="">
-            <ul class="accordion" [ngClass]="navbarFixed ? 'mt-[84px]' : 'mt-4'">
+            <ul
+              class="accordion"
+              [ngClass]="navbarFixed ? 'mt-[88px]' : 'mt-4'"
+            >
               <li *ngFor="let route of routes" [class]="NAV_CLASS">
                 <a
                   [routerLink]="route.path"
@@ -85,7 +111,10 @@
             </ul>
           </div>
         </div>
-        <div class="pt-2 w-full px-6 main-content" [ngClass]="navbarFixed ? 'pt-[78px]' : 'pt-2'">
+        <div
+          class="w-full px-6 main-content"
+          [ngClass]="navbarFixed ? 'pt-[98px]' : 'pt-6'"
+        >
           <ng-container [ngTemplateOutlet]="template"></ng-container>
         </div>
       </div>

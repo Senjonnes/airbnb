@@ -1,51 +1,5 @@
-.auth-left-pain {
-  // background-image: url("../assets/imgs/dvla-left-pain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.auth-container {
-  display: flex;
-  flex-direction: column !important;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.ant-carousel .slick-slider .slick-track,
-.ant-carousel .slick-list,
-.ant-carousel .slick-slider,
-.slick-slide div:first-child {
-  height: 100% !important;
-}
-
-.ant-carousel .slick-dots {
-  justify-content: flex-start;
-  bottom: 8%;
-  left: 5%;
-}
-
-.ant-carousel .slick-dots li {
-  height: 8px !important;
-  width: 8px;
-}
-
-.ant-carousel .slick-active button {
-  background: #d7a81e !important;
-  height: 100% !important;
-  width: 24px;
-}
-
-.ant-carousel .slick-dots button {
-  background: #d7a81e !important;
-  height: 100% !important;
-  border-radius: 10px !important;
-  width: 10px;
-}
-
 .main-nav {
-  height: 100vh;
+  height: auto;
 }
 
 .accordion {
@@ -144,7 +98,6 @@
 }
 
 .main-content {
-  overflow: auto;
   text-align: left;
 }
 
@@ -153,6 +106,7 @@
 }
 
 .side-nav {
+  height: auto;
   @apply w-20;
   transition: all 0.4s ease;
 }
