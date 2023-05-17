@@ -1,3 +1,8 @@
-<h1 class="text-body-lg font-bold underline">
-  Hello world!
-</h1>
+<app-main [template]="content"></app-main>
+<ng-template #content>
+  <div class="w-full bg-primary-400 rounded-lg text-sm-regular text-white">
+    <div className="w-full pb-4">
+      <h1 class="text-body-lg font-bold underline">Hello world!</h1>
+    </div>
+  </div>
+</ng-template>

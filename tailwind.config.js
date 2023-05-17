@@ -77,7 +77,7 @@ module.exports = {
           400: "#6F7278",
           300: "#E4E6EB",
           200: "#FDFCFC",
-          100: "#928EAA",
+          100: "#f3f3f2",
         },
         primary: {
           500: "#00CDAE",
