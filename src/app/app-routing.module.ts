@@ -6,18 +6,24 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'home',
     component: HomeComponent,
   },
+  {
+    path: '**',
+    redirectTo: 'home',
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,  {
-    scrollPositionRestoration: 'enabled'
-  })],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+    }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
