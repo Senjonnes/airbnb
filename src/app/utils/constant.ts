@@ -223,3 +223,5 @@ export const FRAMES: Frame[] = [
     rate: '4.87',
   },
 ];
+
+export const ROOM_NUMBERS: string[] = ['Any', '1', '2', '3', '4', '5+'];

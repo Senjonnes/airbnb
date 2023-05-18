@@ -9,6 +9,9 @@ import { MainComponent } from './layouts/main/main.component';
 import { FrameComponent } from './components/frame/frame.component';
 
 import { NzModalModule } from 'ng-zorro-antd/modal';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
@@ -21,6 +24,9 @@ registerLocaleData(en);
     BrowserModule,
     AppRoutingModule,
     NzModalModule,
+    NzInputModule,
+    NzCheckboxModule,
+    NzButtonModule,
     BrowserAnimationsModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],

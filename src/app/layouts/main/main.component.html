@@ -1,6 +1,8 @@
 <div class="relative h-[100vh]" (scroll)="onScroll()">
   <nav class="bg-white w-full z-10">
-    <div class="mx-auto px-6 border-b border-gray-300 bg-white h-[65.5px] relative z-[10000]">
+    <div
+      class="mx-auto px-6 border-b border-gray-300 bg-white h-[65.5px] relative z-[10000]"
+    >
       <div class="flex justify-between items-center h-full">
         <a href="#/" class="flex items-center py-4 px-2">
           <img [src]="LOGO" class="h-8 mr-2" />
@@ -121,7 +123,7 @@
     </div>
   </div>
   <div
-    class="px-3 py-2 rounded-lg bg-white shadow-lg fixed bottom-[24px] right-[16px] font-semibold flex gap-x-2 items-center"
+    class="px-3 py-2 rounded-lg bg-white shadow-lg fixed bottom-[24px] right-[16px] font-semibold flex gap-x-2 items-center z-[10000]"
   >
     <img [src]="FRAMER" class="h-4" /> Made in Framer
   </div>
@@ -135,10 +137,119 @@
   [nzFooter]="null"
   [nzClosable]="false"
   [nzWrapClassName]="'slide-in-from-right'"
+  [nzMaskStyle]="{ 'background-color': 'transparent' }"
 >
   <ng-container *nzModalContent>
     <div class="w-full h-full bg-white p-6">
-      test
+      <div
+        class="flex w-full justify-between items-center pb-2 pt-2 border-b-[1px] border-gray-300"
+      >
+        <h4 class="text-body-xl font-medium">Filters</h4>
+        <h6 class="font-light text-body-md text-[#cd3658]">Clear All</h6>
+      </div>
+      <div class="pt-6">
+        <h4 class="text-body-xl font-medium mb-0">Price range</h4>
+        <h6 class="text-[#717171] text-body-md font-light">
+          The average nightly price is $133
+        </h6>
+      </div>
+      <div
+        class="w-full grid grid-cols-2 gap-x-2 pb-6 pt-2 border-b-[1px] border-gray-300"
+      >
+        <div>
+          <h6 class="text-[#717171] text-body-md font-light">Min Price</h6>
+          <input
+            nz-input
+            placeholder="large size"
+            class="modal-input"
+            value="$0"
+            disabled
+          />
+        </div>
+        <div>
+          <h6 class="text-[#717171] text-body-md font-light">Min Price</h6>
+          <input
+            nz-input
+            placeholder="large size"
+            class="modal-input"
+            value="$500+"
+            disabled
+          />
+        </div>
+      </div>
+      <div class="pt-6 border-b-[1px] border-gray-300 pb-4">
+        <h4 class="text-body-xl font-medium mb-0">Type of place</h4>
+        <div class="mt-4">
+          <label nz-checkbox nzDisabled class="modal-checkbox">
+            <h6 class="text-[#111111] text-body-lg font-light mb-0">
+              Entire Place
+            </h6>
+            <h6 class="text-[#717171] text-body-md font-light">
+              A place all to yourself
+            </h6>
+          </label>
+        </div>
+        <div class="mt-2">
+          <label nz-checkbox nzDisabled class="modal-checkbox">
+            <h6 class="text-[#111111] text-body-lg font-light mb-0">
+              Private room
+            </h6>
+            <h6 class="text-[#717171] text-body-md font-light">
+              Your own room in a home or a hotel, plus some shared common
+              spaces.
+            </h6>
+          </label>
+        </div>
+        <div class="mt-2">
+          <label nz-checkbox nzDisabled class="modal-checkbox">
+            <h6 class="text-[#111111] text-body-lg font-light mb-0">
+              Shared room
+            </h6>
+            <h6 class="text-[#717171] text-body-md font-light">
+              A sleeping space and common areas that may be shared with others.
+            </h6>
+          </label>
+        </div>
+      </div>
+      <div class="pt-6">
+        <h4 class="text-body-xl font-medium mb-0">Rooms, beds, and baths</h4>
+        <div class="mt-4">
+          <h6 class="text-[#111111] text-body-md font-light">Bedrooms</h6>
+          <div class="w-full gap-x-2 grid grid-cols-6">
+            <div
+              *ngFor="let r of ROOM_NUMBERS; let i = index"
+              [class]="i === 0 ? ACTIVE_ROOM : INACTIVE_ROOM"
+            >
+              {{ r }}
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <h6 class="text-[#111111] text-body-md font-light">Beds</h6>
+          <div class="w-full gap-x-2 grid grid-cols-6">
+            <div
+              *ngFor="let r of ROOM_NUMBERS; let i = index"
+              [class]="i === 0 ? ACTIVE_ROOM : INACTIVE_ROOM"
+            >
+              {{ r }}
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <h6 class="text-[#111111] text-body-md font-light">Bathrooms</h6>
+          <div class="w-full gap-x-2 grid grid-cols-6">
+            <div
+              *ngFor="let r of ROOM_NUMBERS; let i = index"
+              [class]="i === 0 ? ACTIVE_ROOM : INACTIVE_ROOM"
+            >
+              {{ r }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-btn border-t-[1px] border-gray-300">
+        <button nz-button nzType="primary" disabled>Show 836 Homes</button>
+      </div>
     </div>
   </ng-container>
 </nz-modal>

@@ -5,7 +5,7 @@ import {
   OnInit,
   TemplateRef,
 } from '@angular/core';
-import { FRAMER, LOGO, ROUTES } from 'src/app/utils/constant';
+import { FRAMER, LOGO, ROOM_NUMBERS, ROUTES } from 'src/app/utils/constant';
 
 @Component({
   selector: 'app-main',
@@ -17,11 +17,16 @@ export class MainComponent implements OnInit {
   navbarFixed: boolean = false;
   LOGO: string = LOGO;
   FRAMER: string = FRAMER;
+  ROOM_NUMBERS: string[] = ROOM_NUMBERS;
   NAV_CLASS = 'w-full text-gray-300 cursor-pointer items-center mt-2';
   ACTIVE_ANCHOR_CLASS =
     'flex items-center focus:outline-none focus:ring-2 focus:ring-white menu is-active';
   ANCHOR_CLASS =
     'flex items-center focus:outline-none focus:ring-2 focus:ring-white menu';
+  ACTIVE_ROOM =
+    'flex px-4 py-1 items-center justify-center rounded-2xl text-white bg-[#111111] font-light';
+  INACTIVE_ROOM =
+    'flex px-4 py-1 items-center justify-center border-[1px] border-[#11111133] rounded-2xl trans-3 hover:border-[#111111]';
 
   routes = ROUTES;
   guests: number = 4;
