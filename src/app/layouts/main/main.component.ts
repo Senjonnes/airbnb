@@ -25,6 +25,7 @@ export class MainComponent implements OnInit {
 
   routes = ROUTES;
   guests: number = 4;
+  isVisible: boolean = false;
 
   @HostListener('window:scroll', ['$event']) onScroll() {
     if (window.scrollY > 64) {
@@ -46,5 +47,32 @@ export class MainComponent implements OnInit {
 
   remove() {
     this.guests = this.guests === 0 ? 0 : this.guests - 1;
+  }
+
+  showModal(): void {
+    if (this.isVisible) {
+      this.updateStyle();
+    }
+    this.isVisible = !this.isVisible;
+  }
+
+  handleOk(): void {
+    if (this.isVisible) {
+      this.updateStyle();
+    }
+    console.log('Button ok clicked!');
+    this.isVisible = false;
+  }
+
+  handleCancel(): void {
+    console.log('Button cancel clicked!');
+    this.updateStyle();
+    this.isVisible = false;
+  }
+
+  updateStyle(): void {
+    var element = document.querySelector('.ant-modal-wrap');
+    element!.classList.remove('slide-in-from-right');
+    element!.classList.add('slide-out-from-right');
   }
 }

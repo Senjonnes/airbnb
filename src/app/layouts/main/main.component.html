@@ -1,6 +1,6 @@
 <div class="relative h-[100vh]" (scroll)="onScroll()">
   <nav class="bg-white w-full z-10">
-    <div class="mx-auto px-6 border-b border-gray-300 h-[65.5px]">
+    <div class="mx-auto px-6 border-b border-gray-300 bg-white h-[65.5px] relative z-[10000]">
       <div class="flex justify-between items-center h-full">
         <a href="#/" class="flex items-center py-4 px-2">
           <img [src]="LOGO" class="h-8 mr-2" />
@@ -32,7 +32,7 @@
     </div>
     <div
       class="mx-auto px-6 border-b border-gray-300 w-full bg-white"
-      [ngClass]="navbarFixed ? 'fixed top-0 z-10' : ''"
+      [ngClass]="navbarFixed ? 'fixed top-0 z-[10000]' : 'relative z-[10000]'"
     >
       <div class="flex justify-between items-center">
         <div class="flex items-center my-3 mx-2 bg-gray-100 rounded-lg">
@@ -77,7 +77,7 @@
         <div
           class="flex items-center my-3 mx-2 bg-gray-100 rounded-lg cursor-pointer hover:bg-[#ebebea] trans"
         >
-          <div class="p-3">
+          <div class="p-3" (click)="showModal()">
             <img src="assets/images/airbnb-filter.png" class="h-5" />
           </div>
         </div>
@@ -126,3 +126,19 @@
     <img [src]="FRAMER" class="h-4" /> Made in Framer
   </div>
 </div>
+
+<nz-modal
+  [(nzVisible)]="isVisible"
+  (nzOnCancel)="handleCancel()"
+  (nzOnOk)="handleOk()"
+  [nzClassName]="'filter-modal'"
+  [nzFooter]="null"
+  [nzClosable]="false"
+  [nzWrapClassName]="'slide-in-from-right'"
+>
+  <ng-container *nzModalContent>
+    <div class="w-full h-full bg-white p-6">
+      test
+    </div>
+  </ng-container>
+</nz-modal>

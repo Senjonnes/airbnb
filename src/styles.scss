@@ -18,3 +18,50 @@
 .trans-4 {
   transition: all 0.4s ease;
 }
+
+.filter-modal {
+  padding: 0px!important;
+  top: 8rem!important;
+  height: calc(100vh - 8rem)!important;
+  position: absolute!important;
+  width: 400px!important;
+  right: 0px!important;
+  .ant-modal-content {
+    height: 100%;
+  }
+  .ant-modal-body {
+    height: 100%;
+    width: 100%;
+    padding: 0px!important;
+  }
+}
+
+.cdk-overlay-backdrop {
+  opacity: 0!important;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutFromRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.slide-in-from-right {
+  animation: slideInFromRight 0.3s ease-out;
+}
+
+.slide-out-from-right {
+  animation: slideOutFromRight 0.3s ease-out;
+}
