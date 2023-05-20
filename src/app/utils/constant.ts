@@ -117,110 +117,242 @@ export const FRAMES: Frame[] = [
     name: 'Whitefish Estate',
     altImage:
       'https://framerusercontent.com/images/TQv9Req7ZME40dmudtRtkwz9lcQ.webp',
+    tile1:
+      'https://framerusercontent.com/images/nw3QmXYFLApMRCcnn6znTEo6KE.webp',
+    tile2:
+      'https://framerusercontent.com/images/0cV9whDLvUPcMsXBUPQL6qaR54.webp',
     locations: 'Whitefish, Montana, United States',
     price: '$10,000',
     time: 'night',
     rate: '5.00',
+    guest: '16+',
+    bedrooms: '8',
+    beds: '8',
+    baths: '8',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=48.410967,-114.331586&amp;z=13&amp;output=embed',
   },
   {
     id: 2,
     name: 'Luxury stay in Weston, Saint James, Barbados',
     altImage:
       'https://framerusercontent.com/images/afIWyPD7bAqXpOTuGYeO4FzrnU.webp',
+    tile1:
+      'https://framerusercontent.com/images/UbZMotnt6f6PzRjoEUkUqqPoGE.webp',
+    tile2:
+      'https://framerusercontent.com/images/qpfhB78P3kED99kanRfNuDVscmY.webp',
     locations: 'Weston, Saint James, Barbados',
     price: '$1,500',
     time: 'night',
     rate: '5.00',
+    guest: '8',
+    bedrooms: '4',
+    beds: '5',
+    baths: '4',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=13.215804,-59.640795&amp;z=13&amp;output=embed',
   },
   {
     id: 3,
     name: 'Numero 22 - Lake Como - Design Living & Lake View',
     altImage:
       'https://framerusercontent.com/images/wTSsHOfD0gXYkODZBWWWOfdkw.webp',
+    tile1:
+      'https://framerusercontent.com/images/wqIEfjRYn0UbT7uk0i5wpVndBQ.webp',
+    tile2:
+      'https://framerusercontent.com/images/7d8JdJuuXTeM5XjBXGWdIr3RBEQ.jpeg',
     locations: 'Laglio, Lombardia, Italy',
     price: '$359',
     time: 'night',
     rate: '4.99',
+    guest: '6',
+    bedrooms: '2',
+    beds: '3',
+    baths: '3',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=45.882746,9.139109&amp;z=13&amp;output=embed',
   },
   {
     id: 4,
     name: '7,500 sq ft Private Beachfront Estate',
     altImage:
       'https://framerusercontent.com/images/3E8SIyOR9oYK20P1hy1BtAelgI.webp',
+    tile1:
+      'https://framerusercontent.com/images/qhnktNKSOAVYxIll8u7LGPNS4so.webp',
+    tile2:
+      'https://framerusercontent.com/images/PoKbATiObNHJkj0Odn6Iu1w4hI.webp',
     locations: 'Dubai, United Arab Emirates',
     price: '$2,478',
     time: 'night',
     rate: '4.73',
+    guest: '14',
+    bedrooms: '6',
+    beds: '11',
+    baths: '6.5',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=25.179749,55.224732&amp;z=13&amp;output=embed',
   },
   {
     id: 5,
     name: 'Bohemian & Spacious / Private Pool and Garden',
     altImage:
       'https://framerusercontent.com/images/0RUEx3es60Z3CuB1eFkBxcPxmA.webp',
+    tile1:
+      'https://framerusercontent.com/images/zeX5Tu6LII3hUoS8pW7mPBKT1qs.webp',
+    tile2:
+      'https://framerusercontent.com/images/OkcW86CbpLKD4v3ivzgsilMcBTQ.webp',
     locations: 'Tulum, Quintana Roo, Mexico',
     price: '$199',
     time: 'night',
     rate: '4.97',
+    guest: '4',
+    bedrooms: '2',
+    beds: '2',
+    baths: '2.5',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=20.206639,-87.464194&amp;z=13&amp;output=embed',
   },
   {
     id: 6,
     name: 'Designer A-Frame Cabin in the Trees',
     altImage:
       'https://framerusercontent.com/images/3fX1fjZlrzbcXKbTqPD7FpY4Z8.webp',
+    tile1:
+      'https://framerusercontent.com/images/ENEPYDh4R9AUcypFQEWP6b3w2U.webp',
+    tile2:
+      'https://framerusercontent.com/images/msJ4Xe9nhyZpzv3PKhcbBqcpik.webp',
     locations: 'Lake Arrowhead, California, United States',
     price: '$225',
     time: 'night',
     rate: '4.93',
+    guest: '6',
+    bedrooms: '3',
+    beds: '4',
+    baths: '2',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=34.246788,-117.171436&z=13&output=embed',
   },
   {
     id: 7,
     name: 'Fully Renovated 2 BR on River w/ Pool - Walk to To',
     altImage:
       'https://framerusercontent.com/images/lIXcszNPyY7PC0yaVFg5TBtmfA.webp',
+    tile1:
+      'https://framerusercontent.com/images/9okvhQW7JdXxSXTXxATdClfOb0.webp',
+    tile2:
+      'https://framerusercontent.com/images/AhLiImdJyUhRKUinKF7uKxDOSWI.webp',
     locations: 'Aspen, Colorado, United States',
     price: '$546',
     time: 'night',
     rate: '5.00',
+    guest: '6',
+    bedrooms: '2',
+    beds: '4',
+    baths: '2',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=39.190798,-106.822348&z=13&output=embed',
   },
   {
     id: 8,
     name: "Magnolia's Hillcrest Cottage",
     altImage:
       'https://framerusercontent.com/images/ZEBw6ci9AF1cD4D1sFdPW3Mj5rE.webp',
+    tile1:
+      'https://framerusercontent.com/images/fZDWOKLuy6S414Va8FCCB8jJmp0.webp',
+    tile2:
+      'https://framerusercontent.com/images/pAhD9dvshjzpMRsn8tHZ83xkvw.webp',
     locations: 'Waco, Texas, United States',
     price: '$500',
     time: 'night',
     rate: '4.97',
+    guest: '2',
+    bedrooms: '1',
+    beds: '1',
+    baths: '1',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=31.545696,-97.170071&z=13&output=embed',
   },
   {
     id: 9,
     name: 'Unique Architecture Cave House by Cycladica',
     altImage:
       'https://framerusercontent.com/images/WO8ADTYBrqd6BunOnEocxOAS7c.webp',
+    tile1:
+      'https://framerusercontent.com/images/ImMdsP7sC0bAGrrcwfZ3RRrNs8.webp',
+    tile2:
+      'https://framerusercontent.com/images/2OcuFeFe4oCEt8IdSGRCPn5Wb3M.webp',
     locations: 'Oia, South Aegean, Greece',
     price: '$930',
     time: 'night',
     rate: '4.95',
+    guest: '4',
+    bedrooms: '2',
+    beds: '2',
+    baths: '1',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=36.460418,25.382158&z=13&output=embed',
   },
   {
     id: 10,
     name: 'ATELIER ArtVillas Costa Rica',
     altImage:
       'https://framerusercontent.com/images/XKmxgbyaDgBCY0OI7iczwdFvcU.webp',
+    tile1:
+      'https://framerusercontent.com/images/dRYTC1oC821VJz65ZIMEIsXF6oM.webp',
+    tile2:
+      'https://framerusercontent.com/images/rHh4itrsOeZsM02efToBJqtvhdc.webp',
     locations: 'Uvita, Osa, Puntaneras, Costa Rica',
     price: '$830',
     time: 'night',
     rate: '4.80',
+    guest: '6',
+    bedrooms: '3',
+    beds: '3',
+    baths: '2',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=9.152646,-83.745990&z=13&output=embed',
   },
   {
     id: 11,
     name: 'Mountainside Luxury Cabin with Batulao View',
     altImage:
       'https://framerusercontent.com/images/cD0vsVdMfYV5dXwD5abiySgong.webp',
+    tile1:
+      'https://framerusercontent.com/images/04wJwR2xERkTc69QFMHSb8eICKM.webp',
+    tile2:
+      'https://framerusercontent.com/images/UrptHuiXtQEpFr8laYuk1LdvjHY.webp',
     locations: 'Calaca, Calabarzon, Philippines',
     price: '$483',
     time: 'night',
     rate: '4.87',
+    guest: '8',
+    bedrooms: '2',
+    beds: '3',
+    baths: '3',
+    description:
+      'The property, given its close proximity to the refreshing hillside town of Tagaytay and clear blue beaches of Nasugbu, provides a quick escape from the hustle and bustle of city life.',
+    locationUrl:
+      'https://maps.google.com/maps?q=13.919598,120.813774&z=13&output=embed',
   },
 ];
 

@@ -1,5 +1,6 @@
 <div
-  class="rounded-2xl border-[1px] border-[#1111111a] relative cursor-pointer hover:shadow-lg trans-3"
+  class="rounded-[20px] border-[1px] border-[#1111111a] relative cursor-pointer hover:shadow-lg trans-3"
+  (click)="open(frame.id)"
 >
   <img [src]="frame.altImage" alt="" class="frame-img" />
   <div class="px-4 pt-4 pb-2 h-[12rem] flex flex-col justify-between">

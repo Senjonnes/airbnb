@@ -12,6 +12,7 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzProgressModule } from 'ng-zorro-antd/progress';
 
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
@@ -27,6 +28,7 @@ registerLocaleData(en);
     NzInputModule,
     NzCheckboxModule,
     NzButtonModule,
+    NzProgressModule,
     BrowserAnimationsModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],

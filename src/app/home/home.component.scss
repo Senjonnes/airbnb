@@ -1,0 +1,66 @@
+.c-frame:hover .c-black {
+  display: none;
+}
+
+.c-frame:hover .c-white {
+  display: block;
+}
+
+.c-black {
+  display: block;
+}
+
+.c-white {
+  display: none;
+}
+
+.frame-img {
+  pointer-events: none;
+  user-select: none;
+  display: block;
+  width: 100%;
+  height: 48.5%;
+  border-radius: 20px;
+  object-position: center center;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.frame-large-img {
+  pointer-events: none;
+  user-select: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-position: center center;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.framer-user {
+  pointer-events: none;
+  user-select: none;
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-position: center center;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.fixed-form {
+  position: fixed;
+  top: 0;
+  right: 24px;
+  width: 24rem;
+}
+
+.modal-content-scrollbar::-webkit-scrollbar {
+  width: 0em;
+}
+
+.flexout {
+  flex: 1;
+}

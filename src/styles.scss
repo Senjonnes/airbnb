@@ -27,7 +27,7 @@
   position: absolute !important;
   width: 400px !important;
   right: 0px !important;
-  box-shadow: rgba(0, 0, 0, 0.12) -8px 0px 40px 0px!important;
+  box-shadow: rgba(0, 0, 0, 0.12) -8px 0px 40px 0px !important;
   .ant-modal-content {
     height: 100%;
   }
@@ -36,6 +36,25 @@
     width: 100%;
     position: relative;
     padding: 0px !important;
+  }
+}
+
+.frame-modal {
+  padding: 0px !important;
+  top: 0rem !important;
+  height: 100vh !important;
+  position: absolute !important;
+  width: 74% !important;
+  right: 0px !important;
+  .ant-modal-content {
+    height: 100%;
+  }
+  .ant-modal-body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0px !important;
+    // overflow: auto!important;
   }
 }
 
@@ -106,17 +125,35 @@
 }
 
 .modal-btn button {
-  width: 100%!important;
-  border-radius: 12px!important;
+  width: 100% !important;
+  border-radius: 12px !important;
   padding: 24px 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modal-btn button:disabled {
-  color: #ffffff!important;
-  background: #efb2ba!important;
+.framer-btn {
+  bottom: 24px;
+  width: 100%;
+  left: 0px;
+}
+
+.framer-btn button {
   border: none!important;
-  cursor: default!important;
+  width: 100% !important;
+  border-radius: 12px !important;
+  padding: 24px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(95.006deg, rgb(211, 59, 80) 0%, rgb(198, 47, 101) 100%) !important;
+  color: #ffffff !important;
+}
+
+.modal-btn button:disabled {
+  color: #ffffff !important;
+  background: #efb2ba !important;
+  border: none !important;
+  cursor: default !important;
 }

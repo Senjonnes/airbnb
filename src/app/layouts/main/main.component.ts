@@ -65,12 +65,10 @@ export class MainComponent implements OnInit {
     if (this.isVisible) {
       this.updateStyle();
     }
-    console.log('Button ok clicked!');
     this.isVisible = false;
   }
 
   handleCancel(): void {
-    console.log('Button cancel clicked!');
     this.updateStyle();
     this.isVisible = false;
   }
